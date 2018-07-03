@@ -2,10 +2,10 @@
 
 function collectSameElements(collectionA, collectionB) {
   var ans = new Array();
-  var c = collectionA.toString();
-  for(var i = 0; i < collectionB[0].length; i++){
-    if(c.indexOf(collectionB[0][i].toString())>-1){
-      ans.push(collectionB[0][i]);
+  var c = collectionB[0].toString();
+  for(var i = 0; i < collectionA.length; i++){
+    if(c.indexOf(collectionA[i].toString())>-1){
+      ans.push(collectionA[i]);
     }
   }
   return ans;
